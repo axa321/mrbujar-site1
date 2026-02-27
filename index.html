@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MrBujar — Developer & PC Checker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg"></div>
+
+  <main class="wrap">
+    <!-- TOP BAR -->
+    <header class="topbar">
+      <div class="brand">
+        <div class="avatar"><img src="profile.png" alt="MrBujar profile" /></div>
+        <div class="brandText">
+          <div class="row">
+            <div class="brandName">MrBujar</div>
+            <div class="pill">PRO</div>
+          </div>
+          <div class="brandSub">Developer &amp; PC Checker • FiveM + Minecraft</div>
+        </div>
+      </div>
+
+      <a class="btn btnPrimary" href="#" role="button">Join Discord</a>
+    </header>
+
+    <!-- STATUS STRIP -->
+    <section class="strip">
+      <div class="stripCard">
+        <div class="k">Status</div>
+        <div class="v"><span class="dot"></span>Available</div>
+      </div>
+      <div class="stripCard">
+        <div class="k">Response</div>
+        <div class="v">Fast</div>
+      </div>
+      <div class="stripCard">
+        <div class="k">Region</div>
+        <div class="v">EU</div>
+      </div>
+      <div class="stripCard">
+        <div class="k">Focus</div>
+        <div class="v">Evidence-based checks</div>
+      </div>
+    </section>
+
+    <!-- MAIN GRID -->
+    <section class="grid">
+      <!-- ABOUT -->
+      <section class="card about">
+        <h2>About</h2>
+
+        <p>
+          I am a professional PC Checker and Developer with more than 6 years of experience working with anti-cheat detection,
+          digital forensics and investigation of suspicious activity.
+        </p>
+        <p>
+          My main focus is identifying cheats, modified clients, suspicious software and unusual system behaviour that may indicate rule violations.
+          I provide structured and professional PC checks with clear results and documented evidence.
+        </p>
+        <p>
+          I work with both FiveM and Minecraft communities and have experience handling different types of cases, ranging from basic checks to more advanced investigations.
+        </p>
+        <p>
+          My goal is to provide fair and accurate PC checks while maintaining a professional environment where players and staff can trust the results.
+        </p>
+        <p class="muted">
+          I am constantly improving my knowledge and tools to stay up to date with new cheats, bypass methods and detection techniques.
+        </p>
+
+        
+            <div class="miniSub"></div>
+          </div>
+          <p><strong>Privacy-first</strong></p>
+            <div class="miniSub"></div>
+          </div>
+        </div>
+
+        
+      </section>
+
+      <!-- HIGHLIGHTS -->
+      <section class="card highlights">
+        <h2>Highlights</h2>
+
+        <div class="highlightRow">
+          <div class="highlightChip">
+            <div class="hValue">6+ Years</div>
+            <div class="hLabel">Experience</div>
+          </div>
+          <div class="highlightChip">
+            <div class="hValue">Anti-cheat</div>
+            <div class="hLabel">Detection</div>
+          </div>
+          <div class="highlightChip">
+            <div class="hValue">FiveM + MC</div>
+            <div class="hLabel">PC Checking</div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="sectionTitle">Services</div>
+        <ul class="list">
+          <li>PC Check (FiveM)</li>
+          <li>PC Check (Minecraft)</li>
+          <li>Evidence review &amp; guidance</li>
+        </ul>
+
+        
+      </section>
+    </section>
+
+    <footer class="foot">
+      <span>Made By MrBujar ❤️</span>
+    </footer>
+  </main>
+
+  <script>
+    // Change this to your real invite later:
+    const DISCORD_LINK = "https://discord.gg/HWu6MXKT3G";
+
+    const copyBtn = document.getElementById("copyBtn");
+    copyBtn.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(DISCORD_LINK);
+        copyBtn.textContent = "Copied ✓";
+        setTimeout(() => (copyBtn.textContent = "Copy Discord link"), 1400);
+      } catch {
+        // fallback
+        window.prompt("Copy this link:", DISCORD_LINK);
+      }
+    });
+  </script>
+</body>
+</html>
